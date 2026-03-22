@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <button onClick={()=> {router.push("/addToList")}}>Go to add to list page</button>
-      {list.map (e => (<p>{e}</p>))}
+      {list.map (e => (<p key={e}>{e}</p>))}
     </div>
   )
 }
